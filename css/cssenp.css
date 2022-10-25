@@ -1,0 +1,29 @@
+.titulo{
+    color: lightblue;
+    text-align: center;
+}
+
+.reglas{
+    color:aliceblue
+}
+
+.selector{
+    color: cornflowerblue;
+}
+
+.BotonJugar{
+    color: aliceblue;
+    background-color: cornflowerblue;
+    border:0ch;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+.footer{
+    color: yellow;
+    
+}
