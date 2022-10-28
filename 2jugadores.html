@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>EL NÚMERO PROHIBIDO</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/cssenp.css">
+
+</head>
+
+<body class="fondo" background="Images/fondo.jpg">
+  <header>
+    <!-- place navbar here -->
+    <h2 class="titulo" id="reglas">Bienvenido al juego de</h2>
+    <h1 class="titulo">EL NÚMERO PROHIBIDO</h1>
+  </header>
+  <main>
+    <h5 class="reglas" id="reglas">Reglas:</h5>
+    <h6 class="reglas" id="reglas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero ea sint necessitatibus voluptates earum nam
+        placeat cumque ut adipisci provident, suscipit quas at ducimus cupiditate incidunt pariatur architecto
+        quibusdam!</h6>
+
+    <div class="row" id="2jugadores">
+        <div class="col-6">
+            <h2>Jugador 1</h2>
+        <div>Haz click sobre el dado o el boton:</div>
+        <div >
+            <img src="Images/1.png" alt="dado" onclick="game()" id="imagendado" class="eldado">
+        </div>
+        <div>
+            <button onclick="game()">Tirar dado</button>
+            <button onclick="planta()">Plantarse</button>
+        </div>
+        <div class="dadostirados" id="dadostirados">
+            DADO: - Dados Tirados: - Sumatoria:
+        </div>
+        <div class="Tiradas" id="tiradas">
+            Puntos del Juego: 0
+        </div>
+
+        </div> 
+
+        <div class="col-6">
+            <h2>Jugador 2</h2>
+        <div>Haz click sobre el dado o el boton:</div>
+        <div >
+            <img src="Images/1.png" alt="dado" onclick="game()" id="imagendado" class="eldado">
+        </div>
+        <div>
+            <button onclick="game()">Tirar dado</button>
+            <button onclick="planta()">Plantarse</button>
+        </div>
+        <div class="dadostirados" id="dadostirados">
+            DADO: - Dados Tirados: - Sumatoria:
+        </div>
+        <div class="Tiradas" id="tiradas">
+            Puntos del Juego: 0
+        </div>
+
+        </div>     
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+    <h6 class="footer">Gracias por jugar!</h6>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script src="js/jsenp.js"></script>
+</body>
+
+</html>

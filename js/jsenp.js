@@ -1,16 +1,75 @@
+var jugadores=0
+var nomjug= [jugadores]
 
-function cantjug(){
-    let jugadores=document.getElementById("Jugadores").value
-    console.log(jugadores)
+function agregarjugador(){
     
-    for (var i = 0; i < jugadores; i++) {
+    let divjug=document.createElement("div")
+    divjug.setAttribute("class","divjugadores")
+    
+    nomjug[jugadores]=document.createElement("input")
+    nomjug[jugadores].setAttribute("class","inputjugador")
+    nomjug[jugadores].value= `Jugador ${jugadores+1}`
+    nomjug[jugadores].id= `Jugador ${jugadores+1}`
+    let players=document.getElementById("players")
+    
+    divjug.appendChild(nomjug[jugadores])    
+    players.appendChild(divjug)
+    
+    jugadores++
+    // console.log(nomjug)
 
-      document.getElementById("oculto").innerHTML=`${i}`
-        
-      }
+    document.getElementById("oculto").className=""
+    document.getElementById("oculto").innerHTML=""
+
+    if (jugadores===4) {
+      console.log(jugadores)
+      console.log(divjug)
+      console.log(nomjug)
+      document.getElementById("botonadd").setAttribute("class","disabled")
+      return document.getElementById("botonadd").setAttribute("disabled","disabled")
+    } else {
+      
+    }
 
 }
 
+
+function botonjugar(){
+  
+  if (nomjug==0) {
+    document.getElementById("oculto").className="oculto"
+    document.getElementById("oculto").innerHTML="POR FAVOR AGREGAR AL MENOS 1 JUGADOR"
+  } else {
+    paraselector=nomjug.length
+    console.log(paraselector)
+    let interfase=document.createElement("div")
+
+    let texto1=document.createElement("div")
+
+    let texto2=document.createElement("div")
+    texto2.setAttribute("class","hazclick")
+    texto2.innerHTML="Haz click sobre el dado o el boton:"
+
+    let player = [0]
+
+      for (let i = 0; i < paraselector; i++) {
+        
+        player[i]=document.getElementById(`Jugador ${i+1}`).value
+                
+        texto1.innerHTML=player[i]
+        interfase=texto1+texto2
+        
+      }
+      
+      document.getElementById("titulojugador").innerHTML=texto1.innerHTML
+      
+      
+    }
+
+    // let player1=document.getElementById("Jugador 1")
+    // console.log(player1.value)
+
+  }
 
 
 
@@ -25,12 +84,14 @@ var a=0
 var sumajugador=0
 
 function game(){
-  dado=getRandomInt()  
+  dado=getRandomInt()
+  
+  let dadoimagen = `../Images/${dado}.png`
   // console.log(`dado: ${dado}`)
   sumatoriaact+=dado
   // console.log(`sumatoria ${sumatoriaact}`)
   vectordedados[a]=dado
-  
+  document.getElementById("imagendado").src=dadoimagen
   // console.log(`AAA: ${vectordedados[a]}`)
 
   

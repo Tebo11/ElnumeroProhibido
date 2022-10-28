@@ -23,7 +23,49 @@
     
 }
 
+.disabled{
+    color: aliceblue;
+    background-color: black;
+    border:0ch;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.oculto{
+    color: red;
+    background-color: brown;
+    padding: 1rem;
+    margin: 1rem;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.maximo{
+    color:aliceblue
+}
+
+.titjugador{
+    color: aqua;
+}
+
+/* .divjugadores{
+    background-color: red;
+}
+
+.inputjugador{
+    border-radius: 2rem;
+} */
+
+.eldado{
+    width: 10%;
+    height: 10%;
+}
+
 .footer{
     color: yellow;
     
 }
+
